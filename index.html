@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="favicon" href="favicon.ico">
+    <title>ScoreCard Generator</title>
+    <meta name="description" content="Get Your Marksheet.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="heading">ScoreCard Generator</h1>
+    <div class="container">
+        <div class="form-container">
+            <h3 class="instruction">Fill the details</h3>
+            <div>
+                <div class="form">
+                    <div class="form-left">
+                        <label for="name">Name</label><br />
+                        <input required type="text" name="name" class="name" placeholder="Enter Name"><br />
+
+                        <label for="roll">Roll</label><br />
+                        <input required type="text" name="roll" class="roll" placeholder="Enter Roll no."><br />
+
+                        <label for="program">Program</label><br />
+                        <input required type="text" name="program" class="program" placeholder="Enter Program"><br />
+
+                        <label for="branch">Branch</label><br />
+                        <select required name="branch" class="branch" title="branch">
+                            <option value="EE">EE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CSE">CSE</option>
+                            <option value="ME">ME</option>
+                            <option value="CE">CE</option>
+                        </select><br />
+
+                        <label for="coursecode">Course Code</label><br />
+                        <input required type="text" name="coursecode" class="coursecode" placeholder="Enter Course Code"
+                            ><br />
+
+                        <label for="coursename">Course Name</label><br />
+                        <input required  type="text" name="coursename" class="coursename" placeholder="Enter Course Name"
+                            ><br />
+
+                        <label for="semester">Semester</label><br />
+                        <select required name="semester" class="semester" title="semester" >
+                            <option value="1st Semester">1st Semester</option>
+                            <option value="2nd Semester">2nd Semester</option>
+                            <option value="3rd Semester">3rd Semester</option>
+                            <option value="4th Semester">4th Semester</option>
+                            <option value="5th Semester">5th Semester</option>
+                            <option value="6th Semester">6th Semester</option>
+                            <option value="7th Semester">7th Semester</option>
+                            <option value="8th Semester">8th Semester</option>
+                        </select><br />
+                    </div>
+                    <div form-right>
+                        <label for="examiner">Name of Examiner</label><br />
+                        <input type="text" required name="examiner" class="examiner"
+                            placeholder="Enter name of Examiner"><br>
+
+                        <label for="dateofexam">Date of Examination</label><br />
+                        <input type="date" required name="dateofexam" class="dateofexam"
+                            placeholder="Enter name of Examiner"><br>
+
+                        <label for="marks1">1st Question</label><br />
+                        <input type="number" required name="marks1" class="marks1"
+                            placeholder="Marks obtained in 1st question" max="8" min="0"><br>
+
+                        <label for="marks2">2nd Question</label><br />
+                        <input type="number" required name="marks2" class="marks2"
+                            placeholder="Marks obtained in 2nd question" max="8" min="0"><br>
+
+                        <label for="marks3">3rd Question</label><br />
+                        <input type="number" required name="marks3" class="marks3"
+                            placeholder="Marks obtained in 3rd question" max="8" min="0"><br>
+
+                        <label for="marks4">4th Question</label><br />
+                        <input type="number" required name="marks4" class="marks4"
+                            placeholder="Marks obtained in 4th question" max="8" min="0"><br>
+
+                        <label for="marks1">5th Question</label><br />
+                        <input type="number" required name="marks5" class="marks5"
+                            placeholder="Marks obtained in 5th question" max="8" min="0"><br>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <button class="getCert">Get ScoreCard</button>
+                    <p class="warning">*Fill all the details correctly to generate your scorecard.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="links">
+            <a href="https://github.com/SudhansuuRanjan"><h2>GitHub</h2></a>
+            <a href="https://Twitter.com/Sudhanss_u"><h2>Twitter</h2></a>
+    </div>
+    
+
+
+
+
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js" crossorigin="anonymous"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4" crossorigin="anonymous"></script>
+    <script src="app.js" async defer></script>
+</body>
+
+</html>
