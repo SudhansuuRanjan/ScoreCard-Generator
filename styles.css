@@ -14,7 +14,7 @@ background: linear-gradient(155deg, rgb(53, 221, 255,1) 0%, rgba(238,254,255,1) 
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#56e2ff",endColorstr="#eefeff",GradientType=1);
 background-repeat: no-repeat;
 background-size: cover;
-min-height: 100vw;
+min-height: 100dvh;
 }
 
 .heading{
